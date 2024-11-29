@@ -25,11 +25,11 @@ namespace TekstTukling
 
         }
 
-        public string ReverseText(string userInput)
+        private string ReverseText(string userInput)
         {
-            foreach (var letter in userInput)
+            foreach (var letter in userInput) // letter går igjennom hver enkelt bokstav i userInput, fra start til slutt
             {
-                reversedText = letter + reversedText;
+                reversedText = letter + reversedText; // setter bokstaven fra userInput før de bokstavene den allerede har gått igjennom
             }
             return reversedText;
         }

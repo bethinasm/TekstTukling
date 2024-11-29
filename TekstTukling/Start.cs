@@ -13,8 +13,8 @@ namespace TekstTukling
         private bool _isActive = true;
         public void Run()
         {
-            // Lage meny her med while og switch. Koble denne opp til program.cs.
-            // Lage nye classes for hver oppgave. Lage en meny for å kunne bla/gå igjennom de.
+            // Lage meny her med while og switch
+            // Lage nye class for hver oppgave. Lage en meny for å kunne bla/gå igjennom de.
 
             while (_isActive)
             {
