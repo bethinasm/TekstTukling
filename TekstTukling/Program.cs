@@ -1,4 +1,6 @@
 ﻿
+using TekstTukling;
+
 Console.WriteLine("OPPGAVE: TekstTukling");
 /*
     Lag et enkelt kommandobasert program med følgende meny:
@@ -15,3 +17,7 @@ Console.WriteLine("OPPGAVE: TekstTukling");
          For eksempel skal 'Terje' bli til 'ejreT.
 
     2 -> En funksjon som bytter ut alle 'e' med 'a' i tekst du sender inn
+*/
+
+var start = new Start();
+start.Run();

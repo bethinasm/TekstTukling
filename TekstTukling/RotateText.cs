@@ -8,21 +8,42 @@ namespace TekstTukling
 {
     internal class RotateText
     {
-        private string text;
+        private string reversedText = "";
+        private string userInput = "";
+        // private string text = "";
 
+
+        public void Run()
+        {
+            Console.Clear();
+            Console.WriteLine("Enter the text you want me to reverse:");
+            userInput = Console.ReadLine();
+            ReverseText(userInput);
+            Console.WriteLine($"Your reversed text it: \n{reversedText}");
+            Console.WriteLine();
+            Thread.Sleep(1000);
+
+        }
+
+        public string ReverseText(string userInput)
+        {
+            foreach (var letter in userInput)
+            {
+                reversedText = letter + reversedText;
+            }
+            return reversedText;
+        }
+
+
+        // Hvordan var det Rebecka ville jeg skulle bruke ctor igjen?
+
+        /*
         public RotateText() // ctor, ikke metode
         {
             string input = Console.ReadLine();
             text = input;
         }
+        */
 
-        public string Text()
-        {
-            string newText = "";
-
-            //rotere text her
-
-            return newText;
-        }
     }
 }
